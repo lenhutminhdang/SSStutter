@@ -1,0 +1,193 @@
+:root {
+  --primary-color: #f0ff6c;
+  --secondary-color: #131525;
+  --yellow: yellow;
+}
+
+html {
+  font-family: sans-serif;
+}
+.bg-dark {
+  background-color: var(--secondary-color) !important;
+}
+.primary-color {
+  color: var(--primary-color) !important;
+}
+/* .active {
+  color: var(--primary-color) !important;
+} */
+
+/*=======================================================================
+[ HEADER ]*/
+.nav-item {
+  margin: 0 4px !important;
+}
+.nav-item * {
+  color: white !important;
+  font-size: 0.9rem;
+}
+.nav-item:hover *,
+h1.active {
+  color: var(--primary-color) !important;
+  transition: 0.2s;
+}
+.dropdown-menu {
+  box-shadow: 2px 3px 7px #13152548;
+}
+.dropdown-item {
+  transition: 0.5s;
+}
+.dropdown-item:hover {
+  color: var(--secondary-color) !important;
+  background-color: var(--primary-color) !important;
+}
+header .navbar-nav .active {
+  color: var(--primary-color) !important;
+}
+/* header nav {
+  border-bottom: 1px solid var(--yellow);
+} */
+
+/* ----- Logo ----- */
+.navbar-brand {
+  font-family: sans-serif;
+  font-size: 1.85rem;
+  font-weight: bolder;
+  color: var(--primary-color);
+  margin-left: 0.5rem;
+}
+
+/* ----- Hamburger menu ----- */
+.fa-bars {
+  font-size: 2rem;
+  color: white;
+}
+
+/* ----- Nav button ----- */
+.fa-search,
+.fa-shopping-bag {
+  font-size: 1.2rem;
+  color: black;
+}
+.btn[type="submit"],
+.cart-btn,
+.user-btn {
+  box-sizing: border-box;
+  width: 4rem;
+  margin: 0 5px;
+  background-color: var(--primary-color);
+}
+
+/* ----- Modal Form ----- */
+.form-modal .btn-close {
+  background-color: var(--primary-color) !important;
+  border-radius: 50% !important;
+  opacity: 0.9 !important;
+}
+.form-modal .btn-close:hover {
+  opacity: 1 !important;
+}
+.form-modal a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+.form-modal .modal-content {
+  background-color: var(--secondary-color);
+  color: white;
+}
+.form-modal input:focus,
+header nav input[type="search"]:focus {
+  box-sizing: border-box;
+  box-shadow: 2px 2px 0 var(--yellow), -2px -2px 0 var(--yellow),
+    -2px 2px 0 var(--yellow), 2px -2px 0 var(--yellow) !important;
+}
+
+/* =========================================================
+[ SSStory section] */
+#story-section .card-title {
+  text-transform: uppercase;
+  font-size: xx-small;
+}
+
+/* =========================================================
+[ FOOTER] */
+footer a {
+  text-decoration: none;
+}
+footer section {
+  background-color: #131525e8;
+}
+
+footer p,
+footer span,
+footer i {
+  color: white !important;
+}
+footer .copy-right {
+  background-color: #131525;
+}
+footer h6,
+footer .copy-right a,
+footer .social-media a {
+  color: #f0ff6c;
+}
+
+/* ============================================
+[ RESPONSIVE ] */
+@media screen and (max-width: 1200px) {
+  .nav-item {
+    margin: 0 2px !important;
+  }
+  .nav-item * {
+    font-size: 0.8rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+    margin-left: 0.4rem;
+  }
+
+  .fa-bars {
+    font-size: 1.8rem;
+  }
+
+  .fa-search,
+  .fa-shopping-bag {
+    font-size: 1rem;
+  }
+  .btn[type="submit"],
+  .cart-btn,
+  .user-btn {
+    width: 3rem;
+    margin: 0 4px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .nav-item {
+    margin: 0 4px !important;
+  }
+  .nav-item * {
+    font-size: 0.9rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.85rem;
+    margin-left: 0.5rem;
+  }
+
+  .fa-bars {
+    font-size: 2rem;
+  }
+
+  .fa-search,
+  .fa-shopping-bag {
+    font-size: 1.2rem;
+  }
+  .btn[type="submit"],
+  .cart-btn,
+  .user-btn {
+    width: 4rem;
+    margin: 0 5px;
+  }
+}

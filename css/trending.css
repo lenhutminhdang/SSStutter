@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital@0;1&display=swap");
+
+#trending-banner h1,
+#trending-content .content p,
+#trending-content h2,
+#trending-content h3 {
+  font-family: "PT Serif", serif;
+}
+
+#trending-content .content {
+  width: 850px;
+}
+
+#trending-content .content p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+#trending-content h2 {
+  font-weight: bold;
+}
+
+.figure-caption {
+  font-style: italic;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  border-radius: 6px;
+  background-color: black !important;
+}
+
+@media screen and (max-width: 768px) {
+  #trending-content .content {
+    width: 100%;
+  }
+}
